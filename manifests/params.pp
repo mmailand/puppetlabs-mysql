@@ -154,7 +154,7 @@ class mysql::params {
       $php_package_name    = 'php5-mysql'
       $python_package_name = 'python-mysqldb'
       $ruby_package_name   = $::lsbdistcodename ? {
-        'trusty'           => 'ruby-mysql',
+        'utopic'           => 'ruby-mysql',
         default            => 'libmysql-ruby',
       }
       $client_dev_package_name = 'libmysqlclient-dev'
